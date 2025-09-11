@@ -9,3 +9,9 @@ while True:
 while cup<10:      #변수가 0일때 무한 반복 = ture랑 같음
     cup = cup + 1
     print(cup)
+
+while True:
+    i = 5
+    if i == 10:
+        break
+    print(i)
