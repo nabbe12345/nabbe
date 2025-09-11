@@ -137,5 +137,5 @@ while True:                            # while문을 사용, ture 라는 함수�
 
 
 
-
+ㅁㄴㅇㄹ
 
