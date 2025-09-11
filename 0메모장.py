@@ -13,4 +13,13 @@ while not all(run):
 
 
 g =input()
-print(f'입력받은 숫자 : {g}')
+print('입력받은 숫자 : {g}')
+
+
+
+
+
+
+
+
+# 로컬    커밋  메인폴더 깃 추가 , 푸시
