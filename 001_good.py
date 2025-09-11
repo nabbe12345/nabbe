@@ -5,6 +5,7 @@ for n in a:
         print(f'4 가 있는 인덱스 : {start}')
     start += 1
 
+
 a = [3,4,1,2,3,4,5,6,1,3,4,2,4]
 start = 0
 running = True
@@ -20,3 +21,8 @@ a = [3,4,1,2,3,4,5,6,1,3,4,2,4]
 for i,v in enumerate(a):
     if v == 4:
         print(f'4에 값은 {i}입니다!')
+
+for t,o in enumerate(a):
+    if o ==3:
+        print(f'3은 {t}에 있습니다')
+
