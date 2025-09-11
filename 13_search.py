@@ -29,6 +29,17 @@ for n in b:                    #for in 을 이용하면 list에 있는 값을 �
         print(f'3이 있는 인덱스 : {idx}')
     idx += 1
 
+
+#b = [3,4,1,2,3,4,5,6,1,3,2]
+# idx = 0
+# for h in b:
+#    if h == 3:
+#        print(f'3이 있는 인덱스 : {idx}')
+#    idx += 1
+
+
+
+
 # 리스트 요소 삭제
 # del a[3] 과 a.remove(3)
 # del 은 특정 인덱스의 값을 지운다
