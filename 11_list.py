@@ -48,8 +48,8 @@ print(f'a[2]={a[2]}')             # a의[몇번째 방] =a[3]
 
 print(f'a의 길이 : {len(a)}')
 print(f'a의 가장 마지막에 있는 방은?? : {a[3]}')
-#a = 1 X 2 3
-#    0 1 x 2
+#a = 1 X 3 4
+#    0 1 X 3
 #길이에서 1을 뺀 값을 이용 -> 인덱스는 0번부터 시작한다는 점을 이용
 
 
@@ -59,8 +59,32 @@ print(f'a의 가장 마지막에 있는 방은?? : {a[len(a) - 1]}')
 print(f'a의 가장 마지막에 있는 방은?? : {a[-1]}') # <- 이건 파이썬에서만 가능
 
 
+#==========================================
+
+#리스트 정렬(sort)
+
+shop_list.sort()   #오름차순 정렬
+print(f'shop_list : {shop_list}')       # 알파벳 순서로 정렬
+
+shop_list.sort(reverse=True)   #내림차순 정렬
+print(f'shop_list : {shop_list}')
+
+#  △ 오름차순 '작은 숫자가 '위로'  ▽ 내림차순은 '작은 숫자가 '아래로'
 
 
+#sorted 는 원본의 리스트를 정렬한 값을 새로운 리스트로 반환
+new_list = sorted(shop_list)
+print(f'new_list : {new_list}')
+#원본을 훼손 하지않고 보여주는  sorted 함수
 
 
+# a 의 2번 인덱스에 c를 넣는다. insert랑 다른 개념
+#         inesrt와 다른점은 해당 인덱스의 값을 지우고 그자리에 들어간다는 것
+a[2] = 'c'
+print(a)
+
+
+# list 삭제
+del a[1]
+print(f'a : {a}')
 
