@@ -39,6 +39,15 @@ print(토스트기('감자')) #토스트기에서 나온 값을 바로 출력
 
 
 
+def 그라인더(been):
+    print(f'{been}가 갈리고 있다')
+    return f'곱게 갈린 {been}'
+
+
+package =그라인더('아라비카 원두')
+print(package)
+
+
 #번호표 :반환타입: O 매개변수: X
 
 
@@ -57,13 +66,19 @@ print(번호표기계())
 
 
 
+
+def 모니터():
+    return "꺼진 모니터"
+
+print(모니터())
+
 #오락실게임 :반환타입: X 매개변수: O            return X
 
-def game(coin):
-     print(f'{coin}번 게임 시작')
+#def game(coin):
+#     print(f'{coin}번 게임 시작')
 
-    good = game('4')
-    print(good)                       #my
+#    good = game('4')
+#    print(good)                       #my
 
 
 
@@ -71,6 +86,14 @@ def 저금통(coin):
     print(f'{coin}원 저축')
 
 저금통(500)
+
+
+
+def 모금함(coin):
+    print(f'{coin}원을 기부 했다')
+
+모금함(5000)
+
 
 #print(저금통()) <- X
 # 저금통에는 return이 없는데
@@ -85,9 +108,9 @@ def 저금통(coin):
 
 #호출벨 :반환타입: X 매개변수: X
 
-def ring():
-    print('벨이 울렸습니다')
-print(ring())                  #my
+#def ring():
+#    print('벨이 울렸습니다')
+#print(ring())                  #my
 
 
 
@@ -95,6 +118,12 @@ def 호출벨():
     print('호출벨이 울린다')
 
 호출벨()
+
+
+def 꺼진휴대폰():
+    print('휴대폰이 꺼져있다')
+
+꺼진휴대폰()
 
 
 
