@@ -11,4 +11,4 @@ for i ,v in enumerate(a,idx):
     if v == 3:
         print(f'asfd : {i}')
 
-깃 원격관리 주소 추가
+#깃 원격관리 주소 추가
