@@ -26,10 +26,13 @@ dic2 ={
 # 사전에 데이터 넣기 1
 a = {'first':'a'}        # a 사전에 키 : 값을 넣었다
 print(a)
+#a 라는 변수에 {'first':'a'}가 들어가있다
 
 # 사전에 데이터 넣기 2
 a['second'] = 'b'
 print(a)
+#a라는 dic에 ['second']를 추가
+
 
 #사전에서 특정 요소 삭제
 del a['second']
