@@ -76,3 +76,51 @@ for key in dic.keys():
 
 for item in dic.items():
     print(f'{item[0]} = {item[1]}')    #인덱스를 이용
+
+#================================================
+
+# 90이상인 사람의 이름만 출력
+members = {
+   'kim': 63, 'lee': 88, 'park': 97, "gang": 77, "hwang": 100, "ga": 65,
+   "na": 92, "la": 90, "wang": 100, "gu": 79
+}
+
+
+
+win = 90
+for key in members.keys():
+    if members[key] >= win:
+        print(f'name : {key}')
+
+
+
+# ========================================
+# 인덱스를 이용
+for item in members.items():
+    if item[1] >= 90:
+        print(f'이름 : {item[0]}')
+
+
+#============================================
+
+
+# key in dic : 해당 키가 사전에 존재하는지 확인
+# 검색 시작여부를 결정할수 있는 방법
+ki ='kim' in members
+print(f'kim은 있는가? : {ki}')
+
+ju ='jung' in members
+print(f'jung은 있는가? : {ju}')
+
+
+#=================================================
+
+# update : 이미 있는 키면 수정을, 없는 키면 추가를 하는 함수
+
+dic.update({'name':'홍길동','age':30,'married':False})
+print(dic)
+
+
+# dic.clear() : 사전안의 내용을 모두 지운다
+dic.clear()
+print(dic)
