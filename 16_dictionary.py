@@ -24,12 +24,12 @@ dic2 ={
 }
 
 # 사전에 데이터 넣기 1
-a = {'first':'a'}        # a 사전에 키 : 값을 넣었다
+a = {'first':'a'}        # a 사전에 키 : 값을 넣었다      a ={'first':'a'}       <- 이 방식은 최초로 데이터 넣을때!
 print(a)
 #a 라는 변수에 {'first':'a'}가 들어가있다
 
 # 사전에 데이터 넣기 2
-a['second'] = 'b'
+a['second'] = 'b'   # a['second'라는 키] : 'b' 값(=)     a['second'] = 'b'     <- 이 방식은 추가를 할때
 print(a)
 #a라는 dic에 ['second']를 추가
 
