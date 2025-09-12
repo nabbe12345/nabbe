@@ -24,7 +24,7 @@ dic2 ={
 }
 
 # 사전에 데이터 넣기 1
-a = {'first':'a'}
+a = {'first':'a'}        # a 사전에 키 : 값을 넣었다
 print(a)
 
 # 사전에 데이터 넣기 2
@@ -35,7 +35,14 @@ print(a)
 del a['second']
 print(a)
 
+#사전의 특정 요소를 꺼내보자(사용법은 List 와 비슷하다)
+print(dic2['name'])
+print(dic2['friends'])
 
+#get 메서드를 활용해서도 가져올 수 있다
+print(dic2.get('phone'))
+print(dic2.get('nick','해당 내용이 없음'))
+#특정 키가 없는 경우 none이 아닌 대체 내용으로 반환 할수있음
 
 
 
