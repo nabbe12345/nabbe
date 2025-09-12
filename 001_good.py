@@ -25,4 +25,4 @@ for i,v in enumerate(a):
 for t,o in enumerate(a):
     if o ==3:
         print(f'3은 {t}에 있습니다')
-=
+=c
