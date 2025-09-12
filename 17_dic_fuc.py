@@ -45,3 +45,34 @@ print(dic.items())
 li = list(dic.items())
 print(li)
 
+
+# 값을 가져오기
+print(dic.get('name'))
+print(dic['phone'])
+
+
+# dic 안에 있는 모든 키와 값을 키:값 형태로 출력해 보자
+
+for it in dic.keys():
+    print(it)
+for ot in dic.values():
+    print(ot)
+#print(f'{it}:{ot}')
+for item in dic.items():
+    print(item)
+
+
+#==========================================
+
+#답안
+
+# 1. 키를 뽑아낸다음 키를 가지고 값을 뽑아내는 방법
+
+for key in dic.keys():
+    print(f'{key}:{dic[key]}')         #1번째 키에서 값을 하나씩 뽑아 온다
+
+
+# 2. 키와 값을 동시에 뽑아낸 다음 거기서 키와 값을 각각 추출하는 방법
+
+for item in dic.items():
+    print(f'{item[0]} = {item[1]}')    #인덱스를 이용
