@@ -26,17 +26,21 @@
 
 
 
-menus = []
+#menus = []
 
-def menu():
- while True:
-   item = input('메뉴를 입력해주세요') #1 메뉴를 입력 주문받기
-   if item == '끝': #2 연속적으로 주문받기 (반복)
-    break #3 끝이라고 말하면 주문 그만 받기
-   menus.append(item)
- return menus
+#def menu():
+# while True:
+ #  item = input('메뉴를 입력해주세요') #1 메뉴를 입력 주문받기
+ #  if item == '끝': #2 연속적으로 주문받기 (반복)
+ #   break #3 끝이라고 말하면 주문 그만 받기
+ #   menus.append(item)
+ # return menus
 #4 결제는 카드 아니면 현금이냐고 물어보기
 
+# card = '카드'
+# cash = '현금'
+# oo = menu()
+# print(oo)
 
 #1 메뉴를 입력 주문받기
 #2 연속적으로 주문받기 (반복)
@@ -47,36 +51,13 @@ def menu():
 
 
 
-
-
-
-card = '카드'
-cash = '현금'
-oo = menu()
-print(oo)
-
-
     #if input(f'결제 수단은 무엇입니까 ? cash / card'):
 
 
 
 
-#def menu():
-#    menus = []
-#    while True:
-#        item = input('메뉴를 입력해주세요: ')
-#        if item == '끝':
-#            break
-#        menus.append(item)
-#    return menus
-
-#oo = menu()
-#print(oo)
-
-
-
-
-
+from memooooooooooo.Study import school
+print(f'공부: {school.study} / {school.book}')
 
 
 
