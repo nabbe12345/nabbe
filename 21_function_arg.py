@@ -14,3 +14,15 @@ print(plus(5))     # 10
 print(plus()) # TypeError: plus() missing 1 required positional argument: 'num'    
 # 값을 안넣을시 에러
 
+
+
+
+def tuple_args(*numbers):
+# 인자값의 종류를 튜플(수정이 불가한 LIST 형태)로만 받겠다
+    print(numbers)
+    total = 0
+    for num in numbers:
+        total += num
+    return total     # <- 들여쓰기 필수 함수에 1개만 리턴 가능
+
+print(tuple_args(1,2,3,4,5))
