@@ -37,9 +37,31 @@ print(tuple_args(1,2,3,4,5))
 
 
 
+#def dic_args(**dic):
+#    print(dic)
+#    for value in dic.values():
+#        print(value)
+#    return value
+
+#result = dic_args(kim=50, lee =100, park=70, na=90)
+#print(result)
+
+
+
 def dic_args(**dic):
     # ** 는 매개변수를 사전형태로 받겠다
-    print(dic)
+
+    # 1. dic 에서 값만 빼온다.
+    values = dic.values()
+    #print(values)
+    # 2. 이 값들을 하나씩 더해 누적시킨다
+    total = 0
+    for v in values:
+        #print(v)
+        total += v
+    # 3. 누적시킨 값을 밖으로 return한다
+    return total
+
 
 
 result = dic_args(kim=50, lee =100, park=70, na=90)
