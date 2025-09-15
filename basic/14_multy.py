@@ -35,11 +35,12 @@ print(royal)
 print(royal[2])
 #특정층만 보고싶을때
 
-print(royal[2][2])
+print(royal[2][2])            #2차원
 #특정 층의 특정 호를 보고싶을때
 
-print(royal[2][1][2])
+print(royal[2][1][2])          # 3차원
 #특정 층 -> 호 -> 방을 보고 싶을때
+
 
 
 
