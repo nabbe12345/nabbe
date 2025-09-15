@@ -5,7 +5,8 @@ class Puppy:
     goal=''
 
     def __init__(self,name,goal): # 생성자 : 객체화시 호출되는 '일단은 함수'
-        pass
-
+        #self = 나를 의미함
+        self.name=name
+        self.goal=goal
 
 puppy = Puppy('멍멍이','집지키기')
