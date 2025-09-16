@@ -21,15 +21,17 @@ class Car:
 
     def change(self,gear):    #매개변수를 추가하여
         print(f'{gear} 단으로 변속 했습니다') # '받아온 값으로'
-        self.gear += gear          # self.gear 를 +1 하여 gear랑 같게한다
+        self.gear += gear          # gear 가 self.gear로 들어가서 +1 해준다
                                    # 1단 2단 3단
         
         
 # Car 클래스를 객체화(복사)
 # 객체를 통해 사용하고 싶은 멤버 호출
-car = Car()      #Car에서 복사한 car 의변수
+car = Car()      #Car에서 복사한 car라는 변수
 # 시동 걸기
-car.start()
+car.start()      # 맴버 함수
 # 변속 하기
 car.change(3)
 print(f'현재 car 의 gear 단수 : {car.gear}')
+# 출력은 car.gear로 한다
+# 왜냐면 Car라는 함수를 car에 담았기 때문 (복사본)
