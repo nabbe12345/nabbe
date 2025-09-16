@@ -28,5 +28,7 @@ mc.start()         #Car에서 가져옴
 mc.run()           # 오버라이드
 mc.turbo = True   # 오버라이드 상태지만 '부모것을 사용 할수있게 하는것'
 mc.run()           # 오버라이드
+
+
 mc.stop()          #Car에서 가져옴
 
