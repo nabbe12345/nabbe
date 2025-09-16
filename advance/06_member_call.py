@@ -19,11 +19,17 @@ class Car:
         else:
           print('시동이 이미 걸려있습니다')
 
-    def change(self,gear):         #매개변수를 추가하여
-        print(f'{self.gear} 단으로 변속 했습니다')
+    def change(self,gear):    #매개변수를 추가하여
+        print(f'{gear} 단으로 변속 했습니다') # '받아온 값으로'
         self.gear += gear          # self.gear 를 +1 하여 gear랑 같게한다
+                                   # 1단 2단 3단
         
         
 # Car 클래스를 객체화(복사)
 # 객체를 통해 사용하고 싶은 멤버 호출
-
+car = Car()      #Car에서 복사한 car 의변수
+# 시동 걸기
+car.start()
+# 변속 하기
+car.change(3)
+print(f'현재 car 의 gear 단수 : {car.gear}')
