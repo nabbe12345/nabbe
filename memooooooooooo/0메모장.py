@@ -55,10 +55,21 @@
 
 
 
+#
+# from memooooooooooo.Study import school
+# print(f'공부: {school.study} / {school.book}')
+#
+#
 
-from memooooooooooo.Study import school
-print(f'공부: {school.study} / {school.book}')
 
+age = 40
+years = 2022
 
+def solution(age):
+    old = (years-age)
+    old += 1
 
+    return old
+
+print(solution(age))
 
