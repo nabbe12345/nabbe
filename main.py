@@ -1,6 +1,6 @@
 from com.py.oop.other_module import other_function
 other_function()
-#모듈의 함수까지 저눕 불러와서 사용하는 방법
+#모듈의 함수까지 전부 불러와서 사용하는 방법
 
 
 
