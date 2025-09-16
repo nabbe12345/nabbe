@@ -9,7 +9,7 @@ class Car:
         # 혹시나 기어가 들어가 있거나 시동이 켜있을수 있어서 초기 상태로 되돌려 놓는다
         self.gear = 0
         self.on = False
-
+    #세팅 하는것
 
     # 멤버 함수 - 클래스 안의 생성자 함수들은 해당 객체를 표시하기 위한 self를 기본으로 가지고 있는다
     def start(self):
@@ -35,3 +35,4 @@ car.change(3)
 print(f'현재 car 의 gear 단수 : {car.gear}')
 # 출력은 car.gear로 한다
 # 왜냐면 Car라는 함수를 car에 담았기 때문 (복사본)
+
