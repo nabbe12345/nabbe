@@ -9,8 +9,8 @@ class Robot:
         print(f'객체 메서드 : {self.count}')
 
     @classmethod # 원본영역의 변수를 건드릴수 있다는 표시
-    def std_count(self):
-        print(f'클래스 메서드 : {self.count}')
+    def std_count(cls):    #self로 두면 사람들이 객체로 헷갈릴수있다
+        print(f'클래스 메서드 : {cls.count}') # 그래서 cls로 함
 
 
 r1 = Robot()
@@ -41,14 +41,23 @@ r2.how_count()
 # ex) 출석부 고치러 직접가야함
 print(f'원본 count : {Robot.count}') #Robot영역에있는 .count
 print(f'원본 함수 : {Robot.std_count()}') #Robot영역에 있는 .std_count()함수
+
+
 #TypeError: Robot.std_count() missing 1 required positional argument: 'self'
 # 셀프 어디갔어 ?????????????????????
 Robot.std_count()
+
 # 해결법 @classmethod를 추가해 원본에서 수정할꺼라는 명령어를 만들어준다
 # 그러면 self를 안붙여도 에러가 안뜬다
+
+
 # self = 복사본이니깐
+#self = 내가 소속된 객체를 의미
 
+#=======================================================
 
-#self = 이 객체 라는 것
-
-
+# 1. 원본영역에서 함수를 실행하니 self 가 없다고 에러가남
+# TypeError: Robot.std_count() missing 1 required positional argument: 'self'
+# 2. self 는 내가 소속된 객체를 의미하는데 원본에서 왔으므로 객체가 없다.
+# 3. @classmethod  어노테이션을 이용해 원본에서 직접 왔으므로 self 는 객체가 아닌 클래스라도 알려줌
+# 4. 그러니 self 라는 이름은 객체를 받는 인자값으로 오해할수 있으니 cls 로 바꾸라고 권고
