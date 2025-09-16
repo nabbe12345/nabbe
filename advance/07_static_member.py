@@ -8,7 +8,7 @@ class Robot:
     def how_count(self):
         print(f'객체 메서드 : {self.count}')
 
-
+    @classmethod # 원본영역의 변수를 건드릴수 있다는 표시
     def std_count(self):
         print(f'클래스 메서드 : {self.count}')
 
@@ -40,6 +40,15 @@ r2.how_count()
 #마찬가지로 원본의 내용을 확인하고 싶다면 원본영역으로 가서 확인해야 한다
 # ex) 출석부 고치러 직접가야함
 print(f'원본 count : {Robot.count}') #Robot영역에있는 .count
-print(f'원본 함수 : {Robot.std_count()}')
+print(f'원본 함수 : {Robot.std_count()}') #Robot영역에 있는 .std_count()함수
+#TypeError: Robot.std_count() missing 1 required positional argument: 'self'
+# 셀프 어디갔어 ?????????????????????
+Robot.std_count()
+# 해결법 @classmethod를 추가해 원본에서 수정할꺼라는 명령어를 만들어준다
+# 그러면 self를 안붙여도 에러가 안뜬다
+# self = 복사본이니깐
+
+
+#self = 이 객체 라는 것
 
 
