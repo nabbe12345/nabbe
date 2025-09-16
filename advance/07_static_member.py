@@ -25,3 +25,21 @@ print(f'r2.count : {r2.count}')
 r2.count = 100
 print(f'r1.count : {r1.count}')
 print(f'r2.count : {r2.count}')
+
+# 원본의 내용을 고치고 싶다면?  -> 원본으로 직접 가서 고쳐야한다
+Robot.count = 1000
+# 원본(static)을 수정해도 이미 복사본(heap) 영역에는 영향을 안받는다
+# 영역이 다르다
+
+
+print(f'r1.count : {r1.count}')
+print(f'r2.count : {r2.count}')
+r1.how_count()
+r2.how_count()
+
+#마찬가지로 원본의 내용을 확인하고 싶다면 원본영역으로 가서 확인해야 한다
+# ex) 출석부 고치러 직접가야함
+print(f'원본 count : {Robot.count}') #Robot영역에있는 .count
+print(f'원본 함수 : {Robot.std_count()}')
+
+
