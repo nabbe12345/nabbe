@@ -13,12 +13,13 @@ class Car:
 
     # 멤버 함수 - 클래스 안의 생성자 함수들은 해당 객체를 표시하기 위한 self를 기본으로 가지고 있는다
     def start(self):
-        if self.on == False:
+        if self.on == False:      # 시동이 꺼지면 출력
             print('시동이 걸렸습니다')
-            self.on = True
+            self.on = True        # 시동을 진짜 키는것
         else:
           print('시동이 이미 걸려있습니다')
 
-    def change(self):
-        pass
+    def change(self,gear):
+        print(f'{self.gear} 단으로 변속 했습니다')
+        self.gear += gear
 
