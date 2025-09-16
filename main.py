@@ -1,0 +1,9 @@
+from com.py.oop.other_module import other_function
+other_function()
+#모듈의 함수까지 저눕 불러와서 사용하는 방법
+
+
+
+from com.py.oop import other_module as mo
+mo.other_function()
+#모듈을 불러와서 별칭을 주어 사용하는 방법
